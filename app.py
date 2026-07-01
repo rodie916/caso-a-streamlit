@@ -1,7 +1,7 @@
 import streamlit as st
 
 # >>> CAMBIO VISUAL para validar CI/CD: edita este título y haz push <
-st.title("Calculadora de IMC")
+st.title("Calculadora de IMC - Diego Medina")
 st.write("Calcula tu Índice de Masa Corporal.")
 
 peso = st.number_input("Peso (kg):", min_value=0.0, format="%.2f")
