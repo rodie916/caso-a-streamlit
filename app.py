@@ -1,19 +1,15 @@
-import streamlit as st
+USER          = os.getenv("USER", "Diego Medina")
 
-# >>> CAMBIO VISUAL para validar CI/CD: edita este título y haz push <
-st.title("Calculadora de IMC - Diego Medina")
-st.write("Calcula tu Índice de Masa Corporal.")
+CLUSTER_NAME  = "Cluster0"
 
-peso = st.number_input("Peso (kg):", min_value=0.0, format="%.2f")
-est  = st.number_input("Estatura (m):", min_value=0.0, format="%.2f")
+MONGO_URI     = os.getenv("MONGO_URI",
+    "mongodb+srv://rodie916:rodie916@cluster0.idqgg3d.mongodb.net/?retryWrites=true&w=majority")
+DB_NAME       = "examenfinal"
+COLLECTION    = "documentos"
 
-if st.button("Calcular IMC"):
-    if peso > 0 and est > 0:
-        imc = peso / (est ** 2)
-        st.write(f"Tu IMC es: {imc:.2f}")
-        if imc < 18.5:   st.info("Bajo peso")
-        elif imc < 25:   st.success("Peso normal")
-        elif imc < 30:   st.warning("Sobrepeso")
-        else:            st.error("Obesidad")
-    else:
-        st.warning("Ingresa valores válidos.")
+COHERE_API_KEY = os.getenv("COHERE_API_KEY", "1OtvRa4xQit2OZj2ZB6DqUFOqEd90hGu37s2fCkMSLQqTZ2pYEqfJQQJ99CGACZoyfiEqg7NAAACAZCRmd1h")
+GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "5gsIG6McVSDCa8Z7ZRb8j6eZbJNbGUBDIYneI3iITl8sFfEqZj9eJQQJ99CGACZoyfiEqg7NAAACAZCRD5l1")
+
+EMBED_MODEL   = "embed-multilingual-v3.0"
+CHAT_MODEL    = "gemini-1.5-flash"
+TOP_K         = 3
