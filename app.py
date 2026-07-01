@@ -1,4 +1,4 @@
-USER          = os.getenv("USER", "Diego Medina")
+USER          = os.getenv("USER", "rodie916")
 
 CLUSTER_NAME  = "Cluster0"
 
