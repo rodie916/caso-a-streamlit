@@ -13,7 +13,7 @@ MONGO_URI      = os.getenv("MONGO_URI",
     "mongodb+srv://rodie916:rodie916@cluster0.idqgg3d.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME        = "examenfinal"
 COLLECTION     = "documentos"
-COHERE_API_KEY = os.getenv("COHERE_API_KEY", "TU_KEY_COHERE")
+COHERE_API_KEY = os.getenv("COHERE_API_KEY", "AQ.Ab8RN6JsfQlSgr7Cdf8DlGzSMEvz9fmA7NT3PqU5Tq5LtJ9sLw")
 GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "TU_KEY_GEMINI")
 EMBED_MODEL    = "embed-multilingual-v3.0"
 CHAT_MODEL     = "gemini-1.5-flash"
